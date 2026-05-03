@@ -938,7 +938,73 @@
     .hero-content { padding: 0 40px; }
     .hero-scroll { left: 40px; }
   }
+/* =========================
+   MOBILE FIX
+========================= */
 
+@media (max-width: 768px) {
+
+  #hero {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hero-portrait {
+    position: relative !important;
+    width: 100% !important;
+    height: 55vh !important;
+    object-fit: cover;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+  }
+
+  .hero-photo {
+    display: none !important;
+  }
+
+  .hero-content {
+    padding: 20px !important;
+    margin-top: -60px;
+  }
+
+  section {
+    padding: 60px 20px !important;
+  }
+
+  .work-grid,
+  .services-grid,
+  .process-steps,
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-scroll {
+    position: relative !important;
+    left: auto;
+    bottom: auto;
+    margin-top: 20px;
+  }
+
+  #about {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+
+  nav {
+    padding: 16px 20px !important;
+  }
+
+}
 </style>
 </head>
 <body>
